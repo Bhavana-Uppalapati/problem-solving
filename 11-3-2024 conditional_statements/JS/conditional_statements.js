@@ -71,3 +71,13 @@ if((year%4===0 && year%100!==0) || (year%400===0)){
 else{
   console.log("Not a leap year")
 }
+
+//checking the given number is prime or not
+let x=Number(prompt("Enter a number"))
+let i=2
+++i;
+if(x%1===0 && x%x===0 && x%i!==0) {
+    console.log("prime number")
+} else{
+    console.log("not a prime number")
+}
