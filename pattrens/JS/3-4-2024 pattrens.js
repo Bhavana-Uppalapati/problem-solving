@@ -157,3 +157,27 @@ for(let i=1;i<=n;i++){
 //     }console.log(str)
 // }
 
+
+let h=Number(prompt("enter the height")) // You can change the height as needed
+
+for (let i = 1; i <=h; i++) {
+    let str = "";
+    for (let j = 1; j <=h - i; j++) {
+        str += " ";
+    }
+    for (let k = 1; k <= 2 * i - 1; k++) {
+        str += "*";
+    }
+
+    console.log(str);
+}
+
+for(let i=0;i<=h;i++){
+    let str=""
+    for(let j=0;j<=i-1;j++){
+      str+=' '
+    }
+    for(let k=1;k<=2*(h-i)-1;k++){
+        str+="*"
+    }console.log(str)
+}
