@@ -215,6 +215,7 @@ let dynamicHtml = ``
 for(i=0;i<a.length;i++){
     dynamicHtml += ` <div class="card" data-id=${a[i].id} style="width: 18rem;">
     <img src=${a[i].image} class="card-img-top" data-id=${a[i].id} alt="...">
+    
     <div class="card-body">
       <h5 class="card-title" data-id=${a[i].id}>${a[i].title}</h5>
       <p class="card-text" data-id=${a[i].id}>${a[i]. description}</p>
@@ -236,10 +237,13 @@ let  new_array = userData
         let remaining = new_array.filter((obj)=>{
             return id!=obj.id           
         });
-         new_array = remaining
+        new_array = remaining
         dl_cards(new_array)
- })
+ });
+
+
  
+
   
   
   
